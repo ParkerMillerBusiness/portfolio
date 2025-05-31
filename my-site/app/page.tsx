@@ -44,7 +44,7 @@ const sideProjects: SideProject[] = [
     blurb:
       "Fully‑functional class project letting users reserve seats and pay via Stripe checkout; built with Next.js.",
     stack: ["Next.js", "Stripe"],
-    href: "https://movie-booking-system-h78ftaj75-lordbobs-projects-e3375ee8.vercel.app/",
+    href: "https://movie-booking-system-ten.vercel.app/",
   },
 ];
 
