@@ -128,7 +128,7 @@ export default function Home() {
               Contact me
             </Link>
 <Link
-  href="/resume.pdf"
+  href="/Resume 2025.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="rounded-full border border-black/20 dark:border-white/20 px-5 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10 transition"
