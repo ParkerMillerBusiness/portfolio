@@ -225,7 +225,7 @@ export default function Home() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-6" onClick={() => setModal(null)}>
           <div className="w-full max-w-4xl rounded-2xl bg-white dark:bg-zinc-900 p-6 shadow-lg" onClick={(e) => e.stopPropagation()}>
             <h2 className="text-xl font-semibold mb-4">BonusOps — Demo</h2>
-            <video className="w-full rounded" src="/sweeps_bot.mp4" controls autoPlay muted />
+            <video className="w-full rounded" src="/bonusOps.mp4" controls autoPlay muted />
             <p className="text-sm mt-4 text-muted-foreground">Demo‑video showing the distributed VM fleet auto‑playing sweepstakes casino games via Selenium & PyAutoGUI.</p>
 
             <button onClick={() => setModal(null)} className="mt-6 rounded-full bg-black text-white dark:bg-white dark:text-black px-4 py-2 text-sm font-medium hover:opacity-90 transition">
