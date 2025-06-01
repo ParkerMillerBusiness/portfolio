@@ -59,7 +59,7 @@ const projects: Project[] = [
     modal: "punch",
   },
   {
-    title: "Casino Automation Bots",
+    title: "BonusOps",
     description:
       "Cloud‑based VM fleet using Python, Selenium & PyAutoGUI to auto‑play sweepstakes casino games; $60 k revenue in 6 months.",
     image: "/casino_bot.png",
@@ -224,7 +224,7 @@ export default function Home() {
       {modal === "casino" && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-6" onClick={() => setModal(null)}>
           <div className="w-full max-w-4xl rounded-2xl bg-white dark:bg-zinc-900 p-6 shadow-lg" onClick={(e) => e.stopPropagation()}>
-            <h2 className="text-xl font-semibold mb-4">Casino Automation Bots — Demo</h2>
+            <h2 className="text-xl font-semibold mb-4">BonusOps — Demo</h2>
             <video className="w-full rounded" src="/sweeps_bot.mp4" controls autoPlay muted />
             <p className="text-sm mt-4 text-muted-foreground">Demo‑video showing the distributed VM fleet auto‑playing sweepstakes casino games via Selenium & PyAutoGUI.</p>
 
