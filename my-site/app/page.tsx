@@ -1,11 +1,9 @@
 /* app/page.tsx */
 "use client";
 
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 
 // Modal identifiers
 type ModalKey = "side" | "casino" | "punch" | null;
@@ -70,7 +68,8 @@ const projects: Project[] = [
   },
   {
     title: "Misc Side Projects",
-    description: "Assorted experiments: AI-powered story games, automated question solvers, full-stack booking platforms, and more.",
+    description:
+      "Assorted experiments: AI-powered story games, automated question solvers, full-stack booking platforms, and more.",
     image: "/misc_projects.jpg",
     tags: ["TypeScript", "Python", "ML"],
     modal: "side",
@@ -79,6 +78,11 @@ const projects: Project[] = [
 
 export default function Home() {
   const [modal, setModal] = useState<ModalKey>(null);
+
+  // set tab title once on mount
+  useEffect(() => {
+    document.title = "Parker Miller | Portfolio";
+  }, []);
 
   // Card component
   const CardInner = (p: Project) => (
@@ -112,10 +116,8 @@ export default function Home() {
     </>
   );
 
-  
   return (
     <>
-
       {/* ───────── main layout ───────── */}
       <div className="flex min-h-screen flex-col bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900 text-foreground">
         {/* Hero */}
@@ -131,14 +133,14 @@ export default function Home() {
             >
               Contact me
             </Link>
-<Link
-  href="/resume2025.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-full border border-black/20 dark:border-white/20 px-5 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10 transition"
->
-  Résumé
-</Link>
+            <Link
+              href="/resume2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-black/20 dark:border-white/20 px-5 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10 transition"
+            >
+              Résumé
+            </Link>
           </div>
         </header>
 
@@ -172,7 +174,8 @@ export default function Home() {
         </footer>
       </div>
 
-{/* ───────── side‑projects modal ───────── */}
+      {/* Modals remain unchanged */}
+      {/* ───────── side‑projects modal ───────── */}
 {modal === "side" && (
   <div
     className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-6"
