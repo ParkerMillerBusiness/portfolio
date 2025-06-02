@@ -1,9 +1,11 @@
 /* app/page.tsx */
 "use client";
 
+
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 
 // Modal identifiers
 type ModalKey = "side" | "casino" | "punch" | null;
@@ -110,8 +112,10 @@ export default function Home() {
     </>
   );
 
+  
   return (
     <>
+
       {/* ───────── main layout ───────── */}
       <div className="flex min-h-screen flex-col bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900 text-foreground">
         {/* Hero */}
